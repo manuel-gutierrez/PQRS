@@ -5674,3 +5674,4 @@ undefined
   allow_multiple_selections: false,
   allow_other_choice: false }
 2018-04-18T15:24:47.514Z - info: Execution took 26 ms, user function completed successfully
+2018-04-18T15:26:35.377Z - info: Worker for processForm closed due to file changes.

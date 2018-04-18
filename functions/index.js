@@ -46,7 +46,6 @@ function getAnswers(formResponse) {
        field.type = ans.type
        field.ans = ans[ans.type]
    });
-   
    return data
 }
 
