@@ -1,0 +1,1970 @@
+2018-04-18T18:19:07.129Z - info: User function triggered, starting execution
+2018-04-18T18:19:07.133Z - info: { from: { type: 'user', id: 'testing2@mail.com' }, body: 'Hey' }
+2018-04-18T18:19:07.577Z - info: Error Ocurred
+2018-04-18T18:19:07.584Z - info: Execution took 453 ms, user function completed successfully
+2018-04-18T18:20:22.090Z - info: Worker for processForm closed due to file changes.
+2018-04-18T18:20:25.210Z - info: User function triggered, starting execution
+2018-04-18T18:20:25.213Z - info: { from: { type: 'user', email: 'testing2@mail.com' },
+  body: 'Hey' }
+2018-04-18T18:20:26.239Z - info: Error Ocurred
+2018-04-18T18:20:26.243Z - info: Execution took 1033 ms, user function completed successfully
+2018-04-18T18:21:15.192Z - info: Worker for processForm closed due to file changes.
+2018-04-18T18:21:22.124Z - info: User function triggered, starting execution
+2018-04-18T18:21:22.126Z - info: { from: { type: 'user', email: 'testing@mail.com' },
+  body: 'Hey' }
+2018-04-18T18:21:23.150Z - info: Error Ocurred
+2018-04-18T18:21:23.155Z - info: Execution took 1031 ms, user function completed successfully
+2018-04-18T18:22:39.156Z - info: User function triggered, starting execution
+2018-04-18T18:22:39.162Z - info: { from: { type: 'user', email: 'userData.email' }, body: 'Hey' }
+2018-04-18T18:22:40.051Z - info: Error Ocurred
+2018-04-18T18:22:40.058Z - error: { Error: Request failed with status code 404
+    at createError (/Users/kike/Dropbox/Documents/Dev/Desarrollos/PQRS/functions/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/kike/Dropbox/Documents/Dev/Desarrollos/PQRS/functions/node_modules/axios/lib/core/settle.js:18:12)
+    at IncomingMessage.handleStreamEnd (/Users/kike/Dropbox/Documents/Dev/Desarrollos/PQRS/functions/node_modules/axios/lib/adapters/http.js:201:11)
+    at emitNone (events.js:111:20)
+    at IncomingMessage.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1064:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+  config: 
+   { adapter: [Function: httpAdapter],
+     transformRequest: { '0': [Function: transformRequest] },
+     transformResponse: { '0': [Function: transformResponse] },
+     timeout: 1000,
+     xsrfCookieName: 'XSRF-TOKEN',
+     xsrfHeaderName: 'X-XSRF-TOKEN',
+     maxContentLength: -1,
+     validateStatus: [Function: validateStatus],
+     headers: 
+      { Accept: 'application/json',
+        'Content-Type': 'application/json',
+        Authorization: 'Bearer dG9rOjRkZDkxNDAxX2RiZGFfNGJhOF84ZjYwXzZhODFmNDdkYzhmMToxOjA=',
+        'User-Agent': 'axios/0.18.0',
+        'Content-Length': 62 },
+     method: 'post',
+     baseURL: 'https://api.intercom.io/',
+     url: 'https://api.intercom.io/messages',
+     data: '{"from":{"type":"user","email":"userData.email"},"body":"Hey"}' },
+  request: 
+   ClientRequest {
+     domain: null,
+     _events: 
+      { socket: [Function],
+        abort: [Function],
+        aborted: [Function],
+        error: [Function],
+        timeout: [Function],
+        prefinish: [Function: requestOnPrefinish] },
+     _eventsCount: 6,
+     _maxListeners: undefined,
+     output: [],
+     outputEncodings: [],
+     outputCallbacks: [],
+     outputSize: 0,
+     writable: true,
+     _last: true,
+     upgrading: false,
+     chunkedEncoding: false,
+     shouldKeepAlive: false,
+     useChunkedEncodingByDefault: true,
+     sendDate: false,
+     _removedConnection: false,
+     _removedContLen: false,
+     _removedTE: false,
+     _contentLength: null,
+     _hasBody: true,
+     _trailer: '',
+     finished: true,
+     _headerSent: true,
+     socket: 
+      TLSSocket {
+        _tlsOptions: [Object],
+        _secureEstablished: true,
+        _securePending: false,
+        _newSessionPending: false,
+        _controlReleased: true,
+        _SNICallback: null,
+        servername: null,
+        npnProtocol: undefined,
+        alpnProtocol: false,
+        authorized: true,
+        authorizationError: null,
+        encrypted: true,
+        _events: [Object],
+        _eventsCount: 9,
+        connecting: false,
+        _hadError: false,
+        _handle: null,
+        _parent: null,
+        _host: 'api.intercom.io',
+        _readableState: [Object],
+        readable: false,
+        domain: null,
+        _maxListeners: undefined,
+        _writableState: [Object],
+        writable: false,
+        allowHalfOpen: false,
+        _bytesDispatched: 319,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: undefined,
+        _server: null,
+        ssl: null,
+        _requestCert: true,
+        _rejectUnauthorized: true,
+        parser: null,
+        _httpMessage: [Circular],
+        read: [Function],
+        _consuming: true,
+        _idleNext: null,
+        _idlePrev: null,
+        _idleTimeout: -1,
+        [Symbol(asyncId)]: 22,
+        [Symbol(bytesRead)]: 738 },
+     connection: 
+      TLSSocket {
+        _tlsOptions: [Object],
+        _secureEstablished: true,
+        _securePending: false,
+        _newSessionPending: false,
+        _controlReleased: true,
+        _SNICallback: null,
+        servername: null,
+        npnProtocol: undefined,
+        alpnProtocol: false,
+        authorized: true,
+        authorizationError: null,
+        encrypted: true,
+        _events: [Object],
+        _eventsCount: 9,
+        connecting: false,
+        _hadError: false,
+        _handle: null,
+        _parent: null,
+        _host: 'api.intercom.io',
+        _readableState: [Object],
+        readable: false,
+        domain: null,
+        _maxListeners: undefined,
+        _writableState: [Object],
+        writable: false,
+        allowHalfOpen: false,
+        _bytesDispatched: 319,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: undefined,
+        _server: null,
+        ssl: null,
+        _requestCert: true,
+        _rejectUnauthorized: true,
+        parser: null,
+        _httpMessage: [Circular],
+        read: [Function],
+        _consuming: true,
+        _idleNext: null,
+        _idlePrev: null,
+        _idleTimeout: -1,
+        [Symbol(asyncId)]: 22,
+        [Symbol(bytesRead)]: 738 },
+     _header: 'POST /messages HTTP/1.1\r\nAccept: application/json\r\nContent-Type: application/json\r\nAuthorization: Bearer dG9rOjRkZDkxNDAxX2RiZGFfNGJhOF84ZjYwXzZhODFmNDdkYzhmMToxOjA=\r\nUser-Agent: axios/0.18.0\r\nContent-Length: 62\r\nHost: api.intercom.io\r\nConnection: close\r\n\r\n',
+     _onPendingData: [Function: noopPendingOutput],
+     agent: 
+      Agent {
+        domain: null,
+        _events: [Object],
+        _eventsCount: 1,
+        _maxListeners: undefined,
+        defaultPort: 443,
+        protocol: 'https:',
+        options: [Object],
+        requests: {},
+        sockets: [Object],
+        freeSockets: {},
+        keepAliveMsecs: 1000,
+        keepAlive: false,
+        maxSockets: Infinity,
+        maxFreeSockets: 256,
+        maxCachedSessions: 100,
+        _sessionCache: [Object] },
+     socketPath: undefined,
+     timeout: undefined,
+     method: 'POST',
+     path: '/messages',
+     _ended: true,
+     res: 
+      IncomingMessage {
+        _readableState: [Object],
+        readable: false,
+        domain: null,
+        _events: [Object],
+        _eventsCount: 3,
+        _maxListeners: undefined,
+        socket: [Object],
+        connection: [Object],
+        httpVersionMajor: 1,
+        httpVersionMinor: 1,
+        httpVersion: '1.1',
+        complete: true,
+        headers: [Object],
+        rawHeaders: [Array],
+        trailers: {},
+        rawTrailers: [],
+        upgrade: false,
+        url: '',
+        method: null,
+        statusCode: 404,
+        statusMessage: 'Not Found',
+        client: [Object],
+        _consuming: true,
+        _dumped: false,
+        req: [Circular],
+        responseUrl: 'https://api.intercom.io/messages',
+        read: [Function] },
+     aborted: undefined,
+     timeoutCb: null,
+     upgradeOrConnect: false,
+     parser: null,
+     maxHeadersCount: null,
+     _redirectable: 
+      Writable {
+        _writableState: [Object],
+        writable: true,
+        domain: null,
+        _events: [Object],
+        _eventsCount: 2,
+        _maxListeners: undefined,
+        _options: [Object],
+        _redirectCount: 0,
+        _requestBodyLength: 62,
+        _requestBodyBuffers: [],
+        _onNativeResponse: [Function],
+        _currentRequest: [Circular],
+        _currentUrl: 'https://api.intercom.io/messages' },
+     [Symbol(outHeadersKey)]: 
+      { accept: [Array],
+        'content-type': [Array],
+        authorization: [Array],
+        'user-agent': [Array],
+        'content-length': [Array],
+        host: [Array] } },
+  response: 
+   { status: 404,
+     statusText: 'Not Found',
+     headers: 
+      { 'cache-control': 'no-cache',
+        'content-type': 'application/json; charset=utf-8',
+        date: 'Wed, 18 Apr 2018 18:22:40 GMT',
+        server: 'nginx',
+        'set-cookie': [Array],
+        status: '404 Not Found',
+        'strict-transport-security': 'max-age=31557600; includeSubDomains; preload',
+        vary: 'Accept-Encoding',
+        'x-content-type-options': 'nosniff',
+        'x-frame-options': 'SAMEORIGIN',
+        'x-intercom-version': 'e7fc648938be45832a18004d2f50d79cc54abbf4',
+        'x-request-id': 'b2r7v8ikpsndqi5o0sj0',
+        'x-runtime': '0.059561',
+        'x-xss-protection': '1; mode=block',
+        'content-length': '116',
+        connection: 'Close' },
+     config: 
+      { adapter: [Function: httpAdapter],
+2018-04-18T18:22:40.066Z - info: Execution took 911 ms, user function completed successfully
+2018-04-18T18:22:40.068Z - error: 
+        transformRequest: [Object],
+        transformResponse: [Object],
+        timeout: 1000,
+        xsrfCookieName: 'XSRF-TOKEN',
+        xsrfHeaderName: 'X-XSRF-TOKEN',
+        maxContentLength: -1,
+        validateStatus: [Function: validateStatus],
+        headers: [Object],
+        method: 'post',
+        baseURL: 'https://api.intercom.io/',
+        url: 'https://api.intercom.io/messages',
+        data: '{"from":{"type":"user","email":"userData.email"},"body":"Hey"}' },
+     request: 
+      ClientRequest {
+        domain: null,
+        _events: [Object],
+        _eventsCount: 6,
+        _maxListeners: undefined,
+        output: [],
+        outputEncodings: [],
+        outputCallbacks: [],
+        outputSize: 0,
+        writable: true,
+        _last: true,
+        upgrading: false,
+        chunkedEncoding: false,
+        shouldKeepAlive: false,
+        useChunkedEncodingByDefault: true,
+        sendDate: false,
+        _removedConnection: false,
+        _removedContLen: false,
+        _removedTE: false,
+        _contentLength: null,
+        _hasBody: true,
+        _trailer: '',
+        finished: true,
+        _headerSent: true,
+        socket: [Object],
+        connection: [Object],
+        _header: 'POST /messages HTTP/1.1\r\nAccept: application/json\r\nContent-Type: application/json\r\nAuthorization: Bearer dG9rOjRkZDkxNDAxX2RiZGFfNGJhOF84ZjYwXzZhODFmNDdkYzhmMToxOjA=\r\nUser-Agent: axios/0.18.0\r\nContent-Length: 62\r\nHost: api.intercom.io\r\nConnection: close\r\n\r\n',
+        _onPendingData: [Function: noopPendingOutput],
+        agent: [Object],
+        socketPath: undefined,
+        timeout: undefined,
+        method: 'POST',
+        path: '/messages',
+        _ended: true,
+        res: [Object],
+        aborted: undefined,
+        timeoutCb: null,
+        upgradeOrConnect: false,
+        parser: null,
+        maxHeadersCount: null,
+        _redirectable: [Object],
+        [Symbol(outHeadersKey)]: [Object] },
+     data: 
+      { type: 'error.list',
+        request_id: 'b2r7v8ikpsndqi5o0sj0',
+        errors: [Array] } } }
+2018-04-18T18:23:21.727Z - error: Function worker killed by signal: SIGTERM
+2018-04-18T18:23:25.678Z - info: User function triggered, starting execution
+2018-04-18T18:23:25.687Z - info: { from: { type: 'contact', email: 'userData.email' },
+  body: 'Hey' }
+2018-04-18T18:23:26.164Z - info: Error Ocurred
+2018-04-18T18:23:26.172Z - error: { Error: Request failed with status code 404
+    at createError (/Users/kike/Dropbox/Documents/Dev/Desarrollos/PQRS/functions/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/kike/Dropbox/Documents/Dev/Desarrollos/PQRS/functions/node_modules/axios/lib/core/settle.js:18:12)
+    at IncomingMessage.handleStreamEnd (/Users/kike/Dropbox/Documents/Dev/Desarrollos/PQRS/functions/node_modules/axios/lib/adapters/http.js:201:11)
+    at emitNone (events.js:111:20)
+    at IncomingMessage.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1064:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+  config: 
+   { adapter: [Function: httpAdapter],
+     transformRequest: { '0': [Function: transformRequest] },
+     transformResponse: { '0': [Function: transformResponse] },
+     timeout: 1000,
+     xsrfCookieName: 'XSRF-TOKEN',
+     xsrfHeaderName: 'X-XSRF-TOKEN',
+     maxContentLength: -1,
+     validateStatus: [Function: validateStatus],
+     headers: 
+      { Accept: 'application/json',
+        'Content-Type': 'application/json',
+        Authorization: 'Bearer dG9rOjRkZDkxNDAxX2RiZGFfNGJhOF84ZjYwXzZhODFmNDdkYzhmMToxOjA=',
+        'User-Agent': 'axios/0.18.0',
+        'Content-Length': 65 },
+     method: 'post',
+     baseURL: 'https://api.intercom.io/',
+     url: 'https://api.intercom.io/messages',
+     data: '{"from":{"type":"contact","email":"userData.email"},"body":"Hey"}' },
+  request: 
+   ClientRequest {
+     domain: null,
+     _events: 
+      { socket: [Function],
+        abort: [Function],
+        aborted: [Function],
+        error: [Function],
+        timeout: [Function],
+        prefinish: [Function: requestOnPrefinish] },
+     _eventsCount: 6,
+     _maxListeners: undefined,
+     output: [],
+     outputEncodings: [],
+     outputCallbacks: [],
+     outputSize: 0,
+     writable: true,
+     _last: true,
+     upgrading: false,
+     chunkedEncoding: false,
+     shouldKeepAlive: false,
+     useChunkedEncodingByDefault: true,
+     sendDate: false,
+     _removedConnection: false,
+     _removedContLen: false,
+     _removedTE: false,
+     _contentLength: null,
+     _hasBody: true,
+     _trailer: '',
+     finished: true,
+     _headerSent: true,
+     socket: 
+      TLSSocket {
+        _tlsOptions: [Object],
+        _secureEstablished: true,
+        _securePending: false,
+        _newSessionPending: false,
+        _controlReleased: true,
+        _SNICallback: null,
+        servername: null,
+        npnProtocol: undefined,
+        alpnProtocol: false,
+        authorized: true,
+        authorizationError: null,
+        encrypted: true,
+        _events: [Object],
+        _eventsCount: 9,
+        connecting: false,
+        _hadError: false,
+        _handle: null,
+        _parent: null,
+        _host: 'api.intercom.io',
+        _readableState: [Object],
+        readable: false,
+        domain: null,
+        _maxListeners: undefined,
+        _writableState: [Object],
+        writable: false,
+        allowHalfOpen: false,
+        _bytesDispatched: 322,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: undefined,
+        _server: null,
+        ssl: null,
+        _requestCert: true,
+        _rejectUnauthorized: true,
+        parser: null,
+        _httpMessage: [Circular],
+        read: [Function],
+        _consuming: true,
+        _idleNext: null,
+        _idlePrev: null,
+        _idleTimeout: -1,
+        [Symbol(asyncId)]: 22,
+        [Symbol(bytesRead)]: 819 },
+     connection: 
+      TLSSocket {
+        _tlsOptions: [Object],
+        _secureEstablished: true,
+        _securePending: false,
+        _newSessionPending: false,
+        _controlReleased: true,
+        _SNICallback: null,
+        servername: null,
+        npnProtocol: undefined,
+        alpnProtocol: false,
+        authorized: true,
+        authorizationError: null,
+        encrypted: true,
+        _events: [Object],
+        _eventsCount: 9,
+        connecting: false,
+        _hadError: false,
+        _handle: null,
+        _parent: null,
+        _host: 'api.intercom.io',
+        _readableState: [Object],
+        readable: false,
+        domain: null,
+        _maxListeners: undefined,
+        _writableState: [Object],
+        writable: false,
+        allowHalfOpen: false,
+        _bytesDispatched: 322,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: undefined,
+        _server: null,
+        ssl: null,
+        _requestCert: true,
+        _rejectUnauthorized: true,
+        parser: null,
+        _httpMessage: [Circular],
+        read: [Function],
+        _consuming: true,
+        _idleNext: null,
+        _idlePrev: null,
+        _idleTimeout: -1,
+        [Symbol(asyncId)]: 22,
+        [Symbol(bytesRead)]: 819 },
+     _header: 'POST /messages HTTP/1.1\r\nAccept: application/json\r\nContent-Type: application/json\r\nAuthorization: Bearer dG9rOjRkZDkxNDAxX2RiZGFfNGJhOF84ZjYwXzZhODFmNDdkYzhmMToxOjA=\r\nUser-Agent: axios/0.18.0\r\nContent-Length: 65\r\nHost: api.intercom.io\r\nConnection: close\r\n\r\n',
+     _onPendingData: [Function: noopPendingOutput],
+     agent: 
+      Agent {
+        domain: null,
+        _events: [Object],
+        _eventsCount: 1,
+        _maxListeners: undefined,
+        defaultPort: 443,
+        protocol: 'https:',
+        options: [Object],
+        requests: {},
+        sockets: [Object],
+        freeSockets: {},
+        keepAliveMsecs: 1000,
+        keepAlive: false,
+        maxSockets: Infinity,
+        maxFreeSockets: 256,
+        maxCachedSessions: 100,
+        _sessionCache: [Object] },
+     socketPath: undefined,
+     timeout: undefined,
+     method: 'POST',
+     path: '/messages',
+     _ended: true,
+     res: 
+      IncomingMessage {
+        _readableState: [Object],
+        readable: false,
+        domain: null,
+        _events: [Object],
+        _eventsCount: 3,
+        _maxListeners: undefined,
+        socket: [Object],
+        connection: [Object],
+        httpVersionMajor: 1,
+        httpVersionMinor: 1,
+        httpVersion: '1.1',
+        complete: true,
+        headers: [Object],
+        rawHeaders: [Array],
+        trailers: {},
+        rawTrailers: [],
+        upgrade: false,
+        url: '',
+        method: null,
+        statusCode: 404,
+        statusMessage: 'Not Found',
+        client: [Object],
+        _consuming: true,
+        _dumped: false,
+        req: [Circular],
+        responseUrl: 'https://api.intercom.io/messages',
+        read: [Function] },
+     aborted: undefined,
+     timeoutCb: null,
+     upgradeOrConnect: false,
+     parser: null,
+     maxHeadersCount: null,
+     _redirectable: 
+      Writable {
+        _writableState: [Object],
+        writable: true,
+        domain: null,
+        _events: [Object],
+        _eventsCount: 2,
+        _maxListeners: undefined,
+        _options: [Object],
+        _redirectCount: 0,
+        _requestBodyLength: 65,
+        _requestBodyBuffers: [],
+        _onNativeResponse: [Function],
+        _currentRequest: [Circular],
+        _currentUrl: 'https://api.intercom.io/messages' },
+     [Symbol(outHeadersKey)]: 
+      { accept: [Array],
+        'content-type': [Array],
+        authorization: [Array],
+        'user-agent': [Array],
+        'content-length': [Array],
+        host: [Array] } },
+  response: 
+   { status: 404,
+     statusText: 'Not Found',
+     headers: 
+      { 'cache-control': 'no-cache',
+        'content-type': 'application/json; charset=utf-8',
+        date: 'Wed, 18 Apr 2018 18:23:26 GMT',
+        server: 'nginx',
+        'set-cookie': [Array],
+        status: '404 Not Found',
+        'strict-transport-security': 'max-age=31557600; includeSubDomains; preload',
+        vary: 'Accept-Encoding',
+        'x-content-type-options': 'nosniff',
+        'x-frame-options': 'SAMEORIGIN',
+        'x-intercom-version': 'e7fc648938be45832a18004d2f50d79cc54abbf4',
+        'x-ratelimit-limit': '83',
+        'x-ratelimit-remaining': '83',
+        'x-ratelimit-reset': '1524075810',
+        'x-request-id': 'b2r7vjr1rdejhienpvhg',
+        'x-runtime': '0.046695',
+        'x-xss-protection': '1; mode=block',
+2018-04-18T18:23:26.177Z - info: Execution took 501 ms, user function completed successfully
+2018-04-18T18:23:26.185Z - error: 
+        'content-length': '116',
+        connection: 'Close' },
+     config: 
+      { adapter: [Function: httpAdapter],
+        transformRequest: [Object],
+        transformResponse: [Object],
+        timeout: 1000,
+        xsrfCookieName: 'XSRF-TOKEN',
+        xsrfHeaderName: 'X-XSRF-TOKEN',
+        maxContentLength: -1,
+        validateStatus: [Function: validateStatus],
+        headers: [Object],
+        method: 'post',
+        baseURL: 'https://api.intercom.io/',
+        url: 'https://api.intercom.io/messages',
+        data: '{"from":{"type":"contact","email":"userData.email"},"body":"Hey"}' },
+     request: 
+      ClientRequest {
+        domain: null,
+        _events: [Object],
+        _eventsCount: 6,
+        _maxListeners: undefined,
+        output: [],
+        outputEncodings: [],
+        outputCallbacks: [],
+        outputSize: 0,
+        writable: true,
+        _last: true,
+        upgrading: false,
+        chunkedEncoding: false,
+        shouldKeepAlive: false,
+        useChunkedEncodingByDefault: true,
+        sendDate: false,
+        _removedConnection: false,
+        _removedContLen: false,
+        _removedTE: false,
+        _contentLength: null,
+        _hasBody: true,
+        _trailer: '',
+        finished: true,
+        _headerSent: true,
+        socket: [Object],
+        connection: [Object],
+        _header: 'POST /messages HTTP/1.1\r\nAccept: application/json\r\nContent-Type: application/json\r\nAuthorization: Bearer dG9rOjRkZDkxNDAxX2RiZGFfNGJhOF84ZjYwXzZhODFmNDdkYzhmMToxOjA=\r\nUser-Agent: axios/0.18.0\r\nContent-Length: 65\r\nHost: api.intercom.io\r\nConnection: close\r\n\r\n',
+        _onPendingData: [Function: noopPendingOutput],
+        agent: [Object],
+        socketPath: undefined,
+        timeout: undefined,
+        method: 'POST',
+        path: '/messages',
+        _ended: true,
+        res: [Object],
+        aborted: undefined,
+        timeoutCb: null,
+        upgradeOrConnect: false,
+        parser: null,
+        maxHeadersCount: null,
+        _redirectable: [Object],
+        [Symbol(outHeadersKey)]: [Object] },
+     data: 
+      { type: 'error.list',
+        request_id: 'b2r7vjr1rdejhienpvhg',
+        errors: [Array] } } }
+2018-04-18T18:25:08.696Z - error: Function worker killed by signal: SIGTERM
+2018-04-18T18:25:19.346Z - info: User function triggered, starting execution
+2018-04-18T18:25:19.351Z - info: { from: { type: 'contact', email: 'userData.email' },
+  body: 'Hey' }
+2018-04-18T18:25:20.375Z - info: Error Ocurred
+2018-04-18T18:25:20.380Z - error: { Error: timeout of 1000ms exceeded
+    at createError (/Users/kike/Dropbox/Documents/Dev/Desarrollos/PQRS/functions/node_modules/axios/lib/core/createError.js:16:15)
+    at Timeout.handleRequestTimeout [as _onTimeout] (/Users/kike/Dropbox/Documents/Dev/Desarrollos/PQRS/functions/node_modules/axios/lib/adapters/http.js:216:16)
+    at ontimeout (timers.js:482:11)
+    at tryOnTimeout (timers.js:317:5)
+    at Timer.listOnTimeout (timers.js:277:5)
+  config: 
+   { adapter: [Function: httpAdapter],
+     transformRequest: { '0': [Function: transformRequest] },
+     transformResponse: { '0': [Function: transformResponse] },
+     timeout: 1000,
+     xsrfCookieName: 'XSRF-TOKEN',
+     xsrfHeaderName: 'X-XSRF-TOKEN',
+     maxContentLength: -1,
+     validateStatus: [Function: validateStatus],
+     headers: 
+      { Accept: 'application/json',
+        'Content-Type': 'application/json',
+        Authorization: 'Bearer dG9rOjRkZDkxNDAxX2RiZGFfNGJhOF84ZjYwXzZhODFmNDdkYzhmMToxOjA=',
+        'User-Agent': 'axios/0.18.0',
+        'Content-Length': 65 },
+     method: 'post',
+     baseURL: 'https://api.intercom.io/',
+     url: 'https://api.intercom.io/messages',
+     data: '{"from":{"type":"contact","email":"userData.email"},"body":"Hey"}' },
+  code: 'ECONNABORTED',
+  request: 
+   Writable {
+     _writableState: 
+      WritableState {
+        objectMode: false,
+        highWaterMark: 16384,
+        finalCalled: false,
+        needDrain: false,
+        ending: false,
+        ended: false,
+        finished: false,
+        destroyed: false,
+        decodeStrings: true,
+        defaultEncoding: 'utf8',
+        length: 0,
+        writing: false,
+        corked: 0,
+        sync: true,
+        bufferProcessing: false,
+        onwrite: [Function: bound onwrite],
+        writecb: null,
+        writelen: 0,
+        bufferedRequest: null,
+        lastBufferedRequest: null,
+        pendingcb: 0,
+        prefinished: false,
+        errorEmitted: false,
+        bufferedRequestCount: 0,
+        corkedRequestsFree: [Object] },
+     writable: true,
+     domain: null,
+     _events: 
+      { response: [Function: handleResponse],
+        error: [Function: handleRequestError] },
+     _eventsCount: 2,
+     _maxListeners: undefined,
+     _options: 
+      { protocol: 'https:',
+        maxRedirects: 21,
+        maxBodyLength: 10485760,
+        path: '/messages',
+        method: 'post',
+        headers: [Object],
+        agent: undefined,
+        auth: undefined,
+        hostname: 'api.intercom.io',
+        port: null,
+        nativeProtocols: [Object],
+        pathname: '/messages' },
+     _redirectCount: 0,
+     _requestBodyLength: 65,
+     _requestBodyBuffers: [ [Object] ],
+     _onNativeResponse: [Function],
+     _currentRequest: 
+      ClientRequest {
+        domain: null,
+        _events: [Object],
+        _eventsCount: 6,
+        _maxListeners: undefined,
+        output: [],
+        outputEncodings: [],
+        outputCallbacks: [],
+        outputSize: 0,
+        writable: true,
+        _last: true,
+        upgrading: false,
+        chunkedEncoding: false,
+        shouldKeepAlive: false,
+        useChunkedEncodingByDefault: true,
+        sendDate: false,
+        _removedConnection: false,
+        _removedContLen: false,
+        _removedTE: false,
+        _contentLength: null,
+        _hasBody: true,
+        _trailer: '',
+        finished: true,
+        _headerSent: true,
+        socket: [Object],
+        connection: [Object],
+        _header: 'POST /messages HTTP/1.1\r\nAccept: application/json\r\nContent-Type: application/json\r\nAuthorization: Bearer dG9rOjRkZDkxNDAxX2RiZGFfNGJhOF84ZjYwXzZhODFmNDdkYzhmMToxOjA=\r\nUser-Agent: axios/0.18.0\r\nContent-Length: 65\r\nHost: api.intercom.io\r\nConnection: close\r\n\r\n',
+        _onPendingData: [Function: noopPendingOutput],
+        agent: [Object],
+        socketPath: undefined,
+        timeout: undefined,
+        method: 'POST',
+        path: '/messages',
+        _ended: false,
+        res: null,
+        aborted: 1524075920373,
+        timeoutCb: null,
+        upgradeOrConnect: false,
+        parser: [Object],
+        maxHeadersCount: null,
+        _redirectable: [Circular],
+        [Symbol(outHeadersKey)]: [Object] },
+     _currentUrl: 'https://api.intercom.io/messages' },
+  response: undefined }
+2018-04-18T18:25:20.394Z - info: Execution took 1045 ms, user function completed successfully
+2018-04-18T18:25:32.946Z - error: Function worker killed by signal: SIGTERM
+2018-04-18T18:25:38.267Z - info: User function triggered, starting execution
+2018-04-18T18:25:38.271Z - info: { from: { type: 'contact', email: 'userData.email' },
+  body: 'Hey' }
+2018-04-18T18:25:38.764Z - info: Error Ocurred
+2018-04-18T18:25:38.770Z - error: { Error: Request failed with status code 404
+    at createError (/Users/kike/Dropbox/Documents/Dev/Desarrollos/PQRS/functions/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/kike/Dropbox/Documents/Dev/Desarrollos/PQRS/functions/node_modules/axios/lib/core/settle.js:18:12)
+    at IncomingMessage.handleStreamEnd (/Users/kike/Dropbox/Documents/Dev/Desarrollos/PQRS/functions/node_modules/axios/lib/adapters/http.js:201:11)
+    at emitNone (events.js:111:20)
+    at IncomingMessage.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1064:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+  config: 
+   { adapter: [Function: httpAdapter],
+     transformRequest: { '0': [Function: transformRequest] },
+     transformResponse: { '0': [Function: transformResponse] },
+     timeout: 1000,
+     xsrfCookieName: 'XSRF-TOKEN',
+     xsrfHeaderName: 'X-XSRF-TOKEN',
+     maxContentLength: -1,
+     validateStatus: [Function: validateStatus],
+     headers: 
+      { Accept: 'application/json',
+        'Content-Type': 'application/json',
+        Authorization: 'Bearer dG9rOjRkZDkxNDAxX2RiZGFfNGJhOF84ZjYwXzZhODFmNDdkYzhmMToxOjA=',
+        'User-Agent': 'axios/0.18.0',
+        'Content-Length': 65 },
+     method: 'post',
+     baseURL: 'https://api.intercom.io/',
+     url: 'https://api.intercom.io/messages',
+     data: '{"from":{"type":"contact","email":"userData.email"},"body":"Hey"}' },
+  request: 
+   ClientRequest {
+     domain: null,
+     _events: 
+      { socket: [Function],
+        abort: [Function],
+        aborted: [Function],
+        error: [Function],
+        timeout: [Function],
+        prefinish: [Function: requestOnPrefinish] },
+     _eventsCount: 6,
+     _maxListeners: undefined,
+     output: [],
+     outputEncodings: [],
+     outputCallbacks: [],
+     outputSize: 0,
+     writable: true,
+     _last: true,
+     upgrading: false,
+     chunkedEncoding: false,
+     shouldKeepAlive: false,
+     useChunkedEncodingByDefault: true,
+     sendDate: false,
+     _removedConnection: false,
+     _removedContLen: false,
+     _removedTE: false,
+     _contentLength: null,
+     _hasBody: true,
+     _trailer: '',
+     finished: true,
+     _headerSent: true,
+     socket: 
+      TLSSocket {
+        _tlsOptions: [Object],
+        _secureEstablished: true,
+        _securePending: false,
+        _newSessionPending: false,
+        _controlReleased: true,
+        _SNICallback: null,
+        servername: null,
+        npnProtocol: undefined,
+        alpnProtocol: false,
+        authorized: true,
+        authorizationError: null,
+        encrypted: true,
+        _events: [Object],
+        _eventsCount: 9,
+        connecting: false,
+        _hadError: false,
+        _handle: null,
+        _parent: null,
+        _host: 'api.intercom.io',
+        _readableState: [Object],
+        readable: false,
+        domain: null,
+        _maxListeners: undefined,
+        _writableState: [Object],
+        writable: false,
+        allowHalfOpen: false,
+        _bytesDispatched: 322,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: undefined,
+        _server: null,
+        ssl: null,
+        _requestCert: true,
+        _rejectUnauthorized: true,
+        parser: null,
+        _httpMessage: [Circular],
+        read: [Function],
+        _consuming: true,
+        _idleNext: null,
+        _idlePrev: null,
+        _idleTimeout: -1,
+        [Symbol(asyncId)]: 22,
+        [Symbol(bytesRead)]: 819 },
+     connection: 
+      TLSSocket {
+        _tlsOptions: [Object],
+        _secureEstablished: true,
+        _securePending: false,
+        _newSessionPending: false,
+        _controlReleased: true,
+        _SNICallback: null,
+        servername: null,
+        npnProtocol: undefined,
+        alpnProtocol: false,
+        authorized: true,
+        authorizationError: null,
+        encrypted: true,
+        _events: [Object],
+        _eventsCount: 9,
+        connecting: false,
+        _hadError: false,
+        _handle: null,
+        _parent: null,
+        _host: 'api.intercom.io',
+        _readableState: [Object],
+        readable: false,
+        domain: null,
+        _maxListeners: undefined,
+        _writableState: [Object],
+        writable: false,
+        allowHalfOpen: false,
+        _bytesDispatched: 322,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: undefined,
+        _server: null,
+        ssl: null,
+        _requestCert: true,
+        _rejectUnauthorized: true,
+        parser: null,
+        _httpMessage: [Circular],
+        read: [Function],
+        _consuming: true,
+        _idleNext: null,
+        _idlePrev: null,
+        _idleTimeout: -1,
+        [Symbol(asyncId)]: 22,
+        [Symbol(bytesRead)]: 819 },
+     _header: 'POST /messages HTTP/1.1\r\nAccept: application/json\r\nContent-Type: application/json\r\nAuthorization: Bearer dG9rOjRkZDkxNDAxX2RiZGFfNGJhOF84ZjYwXzZhODFmNDdkYzhmMToxOjA=\r\nUser-Agent: axios/0.18.0\r\nContent-Length: 65\r\nHost: api.intercom.io\r\nConnection: close\r\n\r\n',
+     _onPendingData: [Function: noopPendingOutput],
+     agent: 
+      Agent {
+        domain: null,
+        _events: [Object],
+        _eventsCount: 1,
+        _maxListeners: undefined,
+        defaultPort: 443,
+        protocol: 'https:',
+        options: [Object],
+        requests: {},
+        sockets: [Object],
+        freeSockets: {},
+        keepAliveMsecs: 1000,
+        keepAlive: false,
+        maxSockets: Infinity,
+        maxFreeSockets: 256,
+        maxCachedSessions: 100,
+        _sessionCache: [Object] },
+     socketPath: undefined,
+     timeout: undefined,
+     method: 'POST',
+     path: '/messages',
+     _ended: true,
+     res: 
+      IncomingMessage {
+        _readableState: [Object],
+        readable: false,
+        domain: null,
+        _events: [Object],
+        _eventsCount: 3,
+        _maxListeners: undefined,
+        socket: [Object],
+        connection: [Object],
+        httpVersionMajor: 1,
+        httpVersionMinor: 1,
+        httpVersion: '1.1',
+        complete: true,
+        headers: [Object],
+        rawHeaders: [Array],
+        trailers: {},
+        rawTrailers: [],
+        upgrade: false,
+        url: '',
+        method: null,
+        statusCode: 404,
+        statusMessage: 'Not Found',
+        client: [Object],
+        _consuming: true,
+        _dumped: false,
+        req: [Circular],
+        responseUrl: 'https://api.intercom.io/messages',
+        read: [Function] },
+     aborted: undefined,
+     timeoutCb: null,
+     upgradeOrConnect: false,
+     parser: null,
+     maxHeadersCount: null,
+     _redirectable: 
+      Writable {
+        _writableState: [Object],
+        writable: true,
+        domain: null,
+        _events: [Object],
+        _eventsCount: 2,
+        _maxListeners: undefined,
+        _options: [Object],
+        _redirectCount: 0,
+        _requestBodyLength: 65,
+        _requestBodyBuffers: [],
+        _onNativeResponse: [Function],
+        _currentRequest: [Circular],
+        _currentUrl: 'https://api.intercom.io/messages' },
+     [Symbol(outHeadersKey)]: 
+      { accept: [Array],
+        'content-type': [Array],
+        authorization: [Array],
+        'user-agent': [Array],
+        'content-length': [Array],
+        host: [Array] } },
+  response: 
+   { status: 404,
+     statusText: 'Not Found',
+     headers: 
+      { 'cache-control': 'no-cache',
+        'content-type': 'application/json; charset=utf-8',
+        date: 'Wed, 18 Apr 2018 18:25:38 GMT',
+        server: 'nginx',
+        'set-cookie': [Array],
+        status: '404 Not Found',
+        'strict-transport-security': 'max-age=31557600; includeSubDomains; preload',
+        vary: 'Accept-Encoding',
+        'x-content-type-options': 'nosniff',
+        'x-frame-options': 'SAMEORIGIN',
+        'x-intercom-version': 'e7fc648938be45832a18004d2f50d79cc54abbf4',
+        'x-ratelimit-limit': '83',
+        'x-ratelimit-remaining': '83',
+        'x-ratelimit-reset': '1524075940',
+        'x-request-id': 'b2r80k6op5psjq569qig',
+        'x-runtime': '0.070417',
+        'x-xss-protection': '1; mode=block',
+2018-04-18T18:25:38.780Z - info: Execution took 514 ms, user function completed successfully
+2018-04-18T18:25:38.783Z - error: 
+        'content-length': '116',
+        connection: 'Close' },
+     config: 
+      { adapter: [Function: httpAdapter],
+        transformRequest: [Object],
+        transformResponse: [Object],
+        timeout: 1000,
+        xsrfCookieName: 'XSRF-TOKEN',
+        xsrfHeaderName: 'X-XSRF-TOKEN',
+        maxContentLength: -1,
+        validateStatus: [Function: validateStatus],
+        headers: [Object],
+        method: 'post',
+        baseURL: 'https://api.intercom.io/',
+        url: 'https://api.intercom.io/messages',
+        data: '{"from":{"type":"contact","email":"userData.email"},"body":"Hey"}' },
+     request: 
+      ClientRequest {
+        domain: null,
+        _events: [Object],
+        _eventsCount: 6,
+        _maxListeners: undefined,
+        output: [],
+        outputEncodings: [],
+        outputCallbacks: [],
+        outputSize: 0,
+        writable: true,
+        _last: true,
+        upgrading: false,
+        chunkedEncoding: false,
+        shouldKeepAlive: false,
+        useChunkedEncodingByDefault: true,
+        sendDate: false,
+        _removedConnection: false,
+        _removedContLen: false,
+        _removedTE: false,
+        _contentLength: null,
+        _hasBody: true,
+        _trailer: '',
+        finished: true,
+        _headerSent: true,
+        socket: [Object],
+        connection: [Object],
+        _header: 'POST /messages HTTP/1.1\r\nAccept: application/json\r\nContent-Type: application/json\r\nAuthorization: Bearer dG9rOjRkZDkxNDAxX2RiZGFfNGJhOF84ZjYwXzZhODFmNDdkYzhmMToxOjA=\r\nUser-Agent: axios/0.18.0\r\nContent-Length: 65\r\nHost: api.intercom.io\r\nConnection: close\r\n\r\n',
+        _onPendingData: [Function: noopPendingOutput],
+        agent: [Object],
+        socketPath: undefined,
+        timeout: undefined,
+        method: 'POST',
+        path: '/messages',
+        _ended: true,
+        res: [Object],
+        aborted: undefined,
+        timeoutCb: null,
+        upgradeOrConnect: false,
+        parser: null,
+        maxHeadersCount: null,
+        _redirectable: [Object],
+        [Symbol(outHeadersKey)]: [Object] },
+     data: 
+      { type: 'error.list',
+        request_id: 'b2r80k6op5psjq569qig',
+        errors: [Array] } } }
+2018-04-18T18:26:15.932Z - error: Function worker killed by signal: SIGTERM
+2018-04-18T18:26:18.444Z - info: User function triggered, starting execution
+2018-04-18T18:26:18.447Z - info: { from: { type: 'contact', email: 'userData.email' },
+  body: 'Hey' }
+2018-04-18T18:26:18.887Z - info: Error Ocurred
+2018-04-18T18:26:18.894Z - error: { Error: Request failed with status code 404
+    at createError (/Users/kike/Dropbox/Documents/Dev/Desarrollos/PQRS/functions/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/kike/Dropbox/Documents/Dev/Desarrollos/PQRS/functions/node_modules/axios/lib/core/settle.js:18:12)
+    at IncomingMessage.handleStreamEnd (/Users/kike/Dropbox/Documents/Dev/Desarrollos/PQRS/functions/node_modules/axios/lib/adapters/http.js:201:11)
+    at emitNone (events.js:111:20)
+    at IncomingMessage.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1064:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+  config: 
+   { adapter: [Function: httpAdapter],
+     transformRequest: { '0': [Function: transformRequest] },
+     transformResponse: { '0': [Function: transformResponse] },
+     timeout: 1000,
+     xsrfCookieName: 'XSRF-TOKEN',
+     xsrfHeaderName: 'X-XSRF-TOKEN',
+     maxContentLength: -1,
+     validateStatus: [Function: validateStatus],
+     headers: 
+      { Accept: 'application/json',
+        'Content-Type': 'application/json',
+        Authorization: 'Bearer dG9rOjRkZDkxNDAxX2RiZGFfNGJhOF84ZjYwXzZhODFmNDdkYzhmMToxOjA=',
+        'User-Agent': 'axios/0.18.0',
+        'Content-Length': 65 },
+     method: 'post',
+     baseURL: 'https://api.intercom.io/',
+     url: 'https://api.intercom.io/messages',
+     data: '{"from":{"type":"contact","email":"userData.email"},"body":"Hey"}' },
+  request: 
+   ClientRequest {
+     domain: null,
+     _events: 
+      { socket: [Function],
+        abort: [Function],
+        aborted: [Function],
+        error: [Function],
+        timeout: [Function],
+        prefinish: [Function: requestOnPrefinish] },
+     _eventsCount: 6,
+     _maxListeners: undefined,
+     output: [],
+     outputEncodings: [],
+     outputCallbacks: [],
+     outputSize: 0,
+     writable: true,
+     _last: true,
+     upgrading: false,
+     chunkedEncoding: false,
+     shouldKeepAlive: false,
+     useChunkedEncodingByDefault: true,
+     sendDate: false,
+     _removedConnection: false,
+     _removedContLen: false,
+     _removedTE: false,
+     _contentLength: null,
+     _hasBody: true,
+     _trailer: '',
+     finished: true,
+     _headerSent: true,
+     socket: 
+      TLSSocket {
+        _tlsOptions: [Object],
+        _secureEstablished: true,
+        _securePending: false,
+        _newSessionPending: false,
+        _controlReleased: true,
+        _SNICallback: null,
+        servername: null,
+        npnProtocol: undefined,
+        alpnProtocol: false,
+        authorized: true,
+        authorizationError: null,
+        encrypted: true,
+        _events: [Object],
+        _eventsCount: 9,
+        connecting: false,
+        _hadError: false,
+        _handle: null,
+        _parent: null,
+        _host: 'api.intercom.io',
+        _readableState: [Object],
+        readable: false,
+        domain: null,
+        _maxListeners: undefined,
+        _writableState: [Object],
+        writable: false,
+        allowHalfOpen: false,
+        _bytesDispatched: 322,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: undefined,
+        _server: null,
+        ssl: null,
+        _requestCert: true,
+        _rejectUnauthorized: true,
+        parser: null,
+        _httpMessage: [Circular],
+        read: [Function],
+        _consuming: true,
+        _idleNext: null,
+        _idlePrev: null,
+        _idleTimeout: -1,
+        [Symbol(asyncId)]: 22,
+        [Symbol(bytesRead)]: 819 },
+     connection: 
+      TLSSocket {
+        _tlsOptions: [Object],
+        _secureEstablished: true,
+        _securePending: false,
+        _newSessionPending: false,
+        _controlReleased: true,
+        _SNICallback: null,
+        servername: null,
+        npnProtocol: undefined,
+        alpnProtocol: false,
+        authorized: true,
+        authorizationError: null,
+        encrypted: true,
+        _events: [Object],
+        _eventsCount: 9,
+        connecting: false,
+        _hadError: false,
+        _handle: null,
+        _parent: null,
+        _host: 'api.intercom.io',
+        _readableState: [Object],
+        readable: false,
+        domain: null,
+        _maxListeners: undefined,
+        _writableState: [Object],
+        writable: false,
+        allowHalfOpen: false,
+        _bytesDispatched: 322,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: undefined,
+        _server: null,
+        ssl: null,
+        _requestCert: true,
+        _rejectUnauthorized: true,
+        parser: null,
+        _httpMessage: [Circular],
+        read: [Function],
+        _consuming: true,
+        _idleNext: null,
+        _idlePrev: null,
+        _idleTimeout: -1,
+        [Symbol(asyncId)]: 22,
+        [Symbol(bytesRead)]: 819 },
+     _header: 'POST /messages HTTP/1.1\r\nAccept: application/json\r\nContent-Type: application/json\r\nAuthorization: Bearer dG9rOjRkZDkxNDAxX2RiZGFfNGJhOF84ZjYwXzZhODFmNDdkYzhmMToxOjA=\r\nUser-Agent: axios/0.18.0\r\nContent-Length: 65\r\nHost: api.intercom.io\r\nConnection: close\r\n\r\n',
+     _onPendingData: [Function: noopPendingOutput],
+     agent: 
+      Agent {
+        domain: null,
+        _events: [Object],
+        _eventsCount: 1,
+        _maxListeners: undefined,
+        defaultPort: 443,
+        protocol: 'https:',
+        options: [Object],
+        requests: {},
+        sockets: [Object],
+        freeSockets: {},
+        keepAliveMsecs: 1000,
+        keepAlive: false,
+        maxSockets: Infinity,
+        maxFreeSockets: 256,
+        maxCachedSessions: 100,
+        _sessionCache: [Object] },
+     socketPath: undefined,
+     timeout: undefined,
+     method: 'POST',
+     path: '/messages',
+     _ended: true,
+     res: 
+      IncomingMessage {
+        _readableState: [Object],
+        readable: false,
+        domain: null,
+        _events: [Object],
+        _eventsCount: 3,
+        _maxListeners: undefined,
+        socket: [Object],
+        connection: [Object],
+        httpVersionMajor: 1,
+        httpVersionMinor: 1,
+        httpVersion: '1.1',
+        complete: true,
+        headers: [Object],
+        rawHeaders: [Array],
+        trailers: {},
+        rawTrailers: [],
+        upgrade: false,
+        url: '',
+        method: null,
+        statusCode: 404,
+        statusMessage: 'Not Found',
+        client: [Object],
+        _consuming: true,
+        _dumped: false,
+        req: [Circular],
+        responseUrl: 'https://api.intercom.io/messages',
+        read: [Function] },
+     aborted: undefined,
+     timeoutCb: null,
+     upgradeOrConnect: false,
+     parser: null,
+     maxHeadersCount: null,
+     _redirectable: 
+      Writable {
+        _writableState: [Object],
+        writable: true,
+        domain: null,
+        _events: [Object],
+        _eventsCount: 2,
+        _maxListeners: undefined,
+        _options: [Object],
+        _redirectCount: 0,
+        _requestBodyLength: 65,
+        _requestBodyBuffers: [],
+        _onNativeResponse: [Function],
+        _currentRequest: [Circular],
+        _currentUrl: 'https://api.intercom.io/messages' },
+     [Symbol(outHeadersKey)]: 
+      { accept: [Array],
+        'content-type': [Array],
+        authorization: [Array],
+        'user-agent': [Array],
+        'content-length': [Array],
+        host: [Array] } },
+  response: 
+   { status: 404,
+     statusText: 'Not Found',
+     headers: 
+      { 'cache-control': 'no-cache',
+        'content-type': 'application/json; charset=utf-8',
+        date: 'Wed, 18 Apr 2018 18:26:18 GMT',
+        server: 'nginx',
+        'set-cookie': [Array],
+        status: '404 Not Found',
+        'strict-transport-security': 'max-age=31557600; includeSubDomains; preload',
+        vary: 'Accept-Encoding',
+        'x-content-type-options': 'nosniff',
+        'x-frame-options': 'SAMEORIGIN',
+        'x-intercom-version': 'e7fc648938be45832a18004d2f50d79cc54abbf4',
+        'x-ratelimit-limit': '83',
+        'x-ratelimit-remaining': '83',
+        'x-ratelimit-reset': '1524075980',
+        'x-request-id': 'b2r80u0dqk1ie7emeavg',
+        'x-runtime': '0.047611',
+        'x-xss-protection': '1; mode=block',
+2018-04-18T18:26:18.900Z - info: Execution took 457 ms, user function completed successfully
+2018-04-18T18:26:18.903Z - error: 
+        'content-length': '116',
+        connection: 'Close' },
+     config: 
+      { adapter: [Function: httpAdapter],
+        transformRequest: [Object],
+        transformResponse: [Object],
+        timeout: 1000,
+        xsrfCookieName: 'XSRF-TOKEN',
+        xsrfHeaderName: 'X-XSRF-TOKEN',
+        maxContentLength: -1,
+        validateStatus: [Function: validateStatus],
+        headers: [Object],
+        method: 'post',
+        baseURL: 'https://api.intercom.io/',
+        url: 'https://api.intercom.io/messages',
+        data: '{"from":{"type":"contact","email":"userData.email"},"body":"Hey"}' },
+     request: 
+      ClientRequest {
+        domain: null,
+        _events: [Object],
+        _eventsCount: 6,
+        _maxListeners: undefined,
+        output: [],
+        outputEncodings: [],
+        outputCallbacks: [],
+        outputSize: 0,
+        writable: true,
+        _last: true,
+        upgrading: false,
+        chunkedEncoding: false,
+        shouldKeepAlive: false,
+        useChunkedEncodingByDefault: true,
+        sendDate: false,
+        _removedConnection: false,
+        _removedContLen: false,
+        _removedTE: false,
+        _contentLength: null,
+        _hasBody: true,
+        _trailer: '',
+        finished: true,
+        _headerSent: true,
+        socket: [Object],
+        connection: [Object],
+        _header: 'POST /messages HTTP/1.1\r\nAccept: application/json\r\nContent-Type: application/json\r\nAuthorization: Bearer dG9rOjRkZDkxNDAxX2RiZGFfNGJhOF84ZjYwXzZhODFmNDdkYzhmMToxOjA=\r\nUser-Agent: axios/0.18.0\r\nContent-Length: 65\r\nHost: api.intercom.io\r\nConnection: close\r\n\r\n',
+        _onPendingData: [Function: noopPendingOutput],
+        agent: [Object],
+        socketPath: undefined,
+        timeout: undefined,
+        method: 'POST',
+        path: '/messages',
+        _ended: true,
+        res: [Object],
+        aborted: undefined,
+        timeoutCb: null,
+        upgradeOrConnect: false,
+        parser: null,
+        maxHeadersCount: null,
+        _redirectable: [Object],
+        [Symbol(outHeadersKey)]: [Object] },
+     data: 
+      { type: 'error.list',
+        request_id: 'b2r80u0dqk1ie7emeavg',
+        errors: [Array] } } }
+2018-04-18T18:27:16.368Z - info: Worker for processForm closed due to file changes.
+2018-04-18T18:27:16.398Z - error: Function worker killed by signal: SIGTERM
+2018-04-18T18:27:18.825Z - info: User function triggered, starting execution
+2018-04-18T18:27:19.499Z - info: Error Ocurred
+2018-04-18T18:27:19.641Z - error: { Error: Request failed with status code 404
+    at createError (/Users/kike/Dropbox/Documents/Dev/Desarrollos/PQRS/functions/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/kike/Dropbox/Documents/Dev/Desarrollos/PQRS/functions/node_modules/axios/lib/core/settle.js:18:12)
+    at IncomingMessage.handleStreamEnd (/Users/kike/Dropbox/Documents/Dev/Desarrollos/PQRS/functions/node_modules/axios/lib/adapters/http.js:201:11)
+    at emitNone (events.js:111:20)
+    at IncomingMessage.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1064:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+  config: 
+   { adapter: [Function: httpAdapter],
+     transformRequest: { '0': [Function: transformRequest] },
+     transformResponse: { '0': [Function: transformResponse] },
+     timeout: 1000,
+     xsrfCookieName: 'XSRF-TOKEN',
+     xsrfHeaderName: 'X-XSRF-TOKEN',
+     maxContentLength: -1,
+     validateStatus: [Function: validateStatus],
+     headers: 
+      { Accept: 'application/json',
+        'Content-Type': 'application/json',
+        Authorization: 'Bearer dG9rOjRkZDkxNDAxX2RiZGFfNGJhOF84ZjYwXzZhODFmNDdkYzhmMToxOjA=',
+        'User-Agent': 'axios/0.18.0',
+        'Content-Length': 62 },
+     method: 'post',
+     baseURL: 'https://api.intercom.io/',
+     url: 'https://api.intercom.io/messages',
+     data: '{"from":{"type":"user","email":"userData.email"},"body":"Hey"}' },
+  request: 
+   ClientRequest {
+     domain: null,
+     _events: 
+      { socket: [Function],
+        abort: [Function],
+        aborted: [Function],
+        error: [Function],
+        timeout: [Function],
+        prefinish: [Function: requestOnPrefinish] },
+     _eventsCount: 6,
+     _maxListeners: undefined,
+     output: [],
+     outputEncodings: [],
+     outputCallbacks: [],
+     outputSize: 0,
+     writable: true,
+     _last: true,
+     upgrading: false,
+     chunkedEncoding: false,
+     shouldKeepAlive: false,
+     useChunkedEncodingByDefault: true,
+     sendDate: false,
+     _removedConnection: false,
+     _removedContLen: false,
+     _removedTE: false,
+     _contentLength: null,
+     _hasBody: true,
+     _trailer: '',
+     finished: true,
+     _headerSent: true,
+     socket: 
+      TLSSocket {
+        _tlsOptions: [Object],
+        _secureEstablished: true,
+        _securePending: false,
+        _newSessionPending: false,
+        _controlReleased: true,
+        _SNICallback: null,
+        servername: null,
+        npnProtocol: undefined,
+        alpnProtocol: false,
+        authorized: true,
+        authorizationError: null,
+        encrypted: true,
+        _events: [Object],
+        _eventsCount: 9,
+        connecting: false,
+        _hadError: false,
+        _handle: null,
+        _parent: null,
+        _host: 'api.intercom.io',
+        _readableState: [Object],
+        readable: false,
+        domain: null,
+        _maxListeners: undefined,
+        _writableState: [Object],
+        writable: false,
+        allowHalfOpen: false,
+        _bytesDispatched: 319,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: undefined,
+        _server: null,
+        ssl: null,
+        _requestCert: true,
+        _rejectUnauthorized: true,
+        parser: null,
+        _httpMessage: [Circular],
+        read: [Function],
+        _consuming: true,
+        _idleNext: null,
+        _idlePrev: null,
+        _idleTimeout: -1,
+        [Symbol(asyncId)]: 21,
+        [Symbol(bytesRead)]: 819 },
+     connection: 
+      TLSSocket {
+        _tlsOptions: [Object],
+        _secureEstablished: true,
+        _securePending: false,
+        _newSessionPending: false,
+        _controlReleased: true,
+        _SNICallback: null,
+        servername: null,
+        npnProtocol: undefined,
+        alpnProtocol: false,
+        authorized: true,
+        authorizationError: null,
+        encrypted: true,
+        _events: [Object],
+        _eventsCount: 9,
+        connecting: false,
+        _hadError: false,
+        _handle: null,
+        _parent: null,
+        _host: 'api.intercom.io',
+        _readableState: [Object],
+        readable: false,
+        domain: null,
+        _maxListeners: undefined,
+        _writableState: [Object],
+        writable: false,
+        allowHalfOpen: false,
+        _bytesDispatched: 319,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: undefined,
+        _server: null,
+        ssl: null,
+        _requestCert: true,
+        _rejectUnauthorized: true,
+        parser: null,
+        _httpMessage: [Circular],
+        read: [Function],
+        _consuming: true,
+        _idleNext: null,
+        _idlePrev: null,
+        _idleTimeout: -1,
+        [Symbol(asyncId)]: 21,
+        [Symbol(bytesRead)]: 819 },
+     _header: 'POST /messages HTTP/1.1\r\nAccept: application/json\r\nContent-Type: application/json\r\nAuthorization: Bearer dG9rOjRkZDkxNDAxX2RiZGFfNGJhOF84ZjYwXzZhODFmNDdkYzhmMToxOjA=\r\nUser-Agent: axios/0.18.0\r\nContent-Length: 62\r\nHost: api.intercom.io\r\nConnection: close\r\n\r\n',
+     _onPendingData: [Function: noopPendingOutput],
+     agent: 
+      Agent {
+        domain: null,
+        _events: [Object],
+        _eventsCount: 1,
+        _maxListeners: undefined,
+        defaultPort: 443,
+        protocol: 'https:',
+        options: [Object],
+        requests: {},
+        sockets: [Object],
+        freeSockets: {},
+        keepAliveMsecs: 1000,
+        keepAlive: false,
+        maxSockets: Infinity,
+        maxFreeSockets: 256,
+        maxCachedSessions: 100,
+        _sessionCache: [Object] },
+     socketPath: undefined,
+     timeout: undefined,
+     method: 'POST',
+     path: '/messages',
+     _ended: true,
+     res: 
+      IncomingMessage {
+        _readableState: [Object],
+        readable: false,
+        domain: null,
+        _events: [Object],
+        _eventsCount: 3,
+        _maxListeners: undefined,
+        socket: [Object],
+        connection: [Object],
+        httpVersionMajor: 1,
+        httpVersionMinor: 1,
+        httpVersion: '1.1',
+        complete: true,
+        headers: [Object],
+        rawHeaders: [Array],
+        trailers: {},
+        rawTrailers: [],
+        upgrade: false,
+        url: '',
+        method: null,
+        statusCode: 404,
+        statusMessage: 'Not Found',
+        client: [Object],
+        _consuming: true,
+        _dumped: false,
+        req: [Circular],
+        responseUrl: 'https://api.intercom.io/messages',
+        read: [Function] },
+     aborted: undefined,
+     timeoutCb: null,
+     upgradeOrConnect: false,
+     parser: null,
+     maxHeadersCount: null,
+     _redirectable: 
+      Writable {
+        _writableState: [Object],
+        writable: true,
+        domain: null,
+        _events: [Object],
+        _eventsCount: 2,
+        _maxListeners: undefined,
+        _options: [Object],
+        _redirectCount: 0,
+        _requestBodyLength: 62,
+        _requestBodyBuffers: [],
+        _onNativeResponse: [Function],
+        _currentRequest: [Circular],
+        _currentUrl: 'https://api.intercom.io/messages' },
+     [Symbol(outHeadersKey)]: 
+      { accept: [Array],
+        'content-type': [Array],
+        authorization: [Array],
+        'user-agent': [Array],
+        'content-length': [Array],
+        host: [Array] } },
+  response: 
+   { status: 404,
+     statusText: 'Not Found',
+     headers: 
+      { 'cache-control': 'no-cache',
+        'content-type': 'application/json; charset=utf-8',
+        date: 'Wed, 18 Apr 2018 18:27:19 GMT',
+        server: 'nginx',
+        'set-cookie': [Array],
+        status: '404 Not Found',
+        'strict-transport-security': 'max-age=31557600; includeSubDomains; preload',
+        vary: 'Accept-Encoding',
+        'x-content-type-options': 'nosniff',
+        'x-frame-options': 'SAMEORIGIN',
+        'x-intercom-version': 'e7fc648938be45832a18004d2f50d79cc54abbf4',
+        'x-ratelimit-limit': '83',
+        'x-ratelimit-remaining': '83',
+        'x-ratelimit-reset': '1524076040',
+        'x-request-id': 'b2r81cpouifrtpi1bd30',
+        'x-runtime': '0.059131',
+        'x-xss-protection': '1; mode=block',
+  
+2018-04-18T18:27:19.651Z - info: Execution took 826 ms, user function completed successfully
+2018-04-18T18:27:19.654Z - error:       'content-length': '116',
+        connection: 'Close' },
+     config: 
+      { adapter: [Function: httpAdapter],
+        transformRequest: [Object],
+        transformResponse: [Object],
+        timeout: 1000,
+        xsrfCookieName: 'XSRF-TOKEN',
+        xsrfHeaderName: 'X-XSRF-TOKEN',
+        maxContentLength: -1,
+        validateStatus: [Function: validateStatus],
+        headers: [Object],
+        method: 'post',
+        baseURL: 'https://api.intercom.io/',
+        url: 'https://api.intercom.io/messages',
+        data: '{"from":{"type":"user","email":"userData.email"},"body":"Hey"}' },
+     request: 
+      ClientRequest {
+        domain: null,
+        _events: [Object],
+        _eventsCount: 6,
+        _maxListeners: undefined,
+        output: [],
+        outputEncodings: [],
+        outputCallbacks: [],
+        outputSize: 0,
+        writable: true,
+        _last: true,
+        upgrading: false,
+        chunkedEncoding: false,
+        shouldKeepAlive: false,
+        useChunkedEncodingByDefault: true,
+        sendDate: false,
+        _removedConnection: false,
+        _removedContLen: false,
+        _removedTE: false,
+        _contentLength: null,
+        _hasBody: true,
+        _trailer: '',
+        finished: true,
+        _headerSent: true,
+        socket: [Object],
+        connection: [Object],
+        _header: 'POST /messages HTTP/1.1\r\nAccept: application/json\r\nContent-Type: application/json\r\nAuthorization: Bearer dG9rOjRkZDkxNDAxX2RiZGFfNGJhOF84ZjYwXzZhODFmNDdkYzhmMToxOjA=\r\nUser-Agent: axios/0.18.0\r\nContent-Length: 62\r\nHost: api.intercom.io\r\nConnection: close\r\n\r\n',
+        _onPendingData: [Function: noopPendingOutput],
+        agent: [Object],
+        socketPath: undefined,
+        timeout: undefined,
+        method: 'POST',
+        path: '/messages',
+        _ended: true,
+        res: [Object],
+        aborted: undefined,
+        timeoutCb: null,
+        upgradeOrConnect: false,
+        parser: null,
+        maxHeadersCount: null,
+        _redirectable: [Object],
+        [Symbol(outHeadersKey)]: [Object] },
+     data: 
+      { type: 'error.list',
+        request_id: 'b2r81cpouifrtpi1bd30',
+        errors: [Array] } } }
+2018-04-18T18:27:49.612Z - error: Function worker killed by signal: SIGTERM
+2018-04-19T17:03:51.163Z - info: Worker for processForm closed due to file changes.
+2018-04-19T17:03:56.853Z - info: User function triggered, starting execution
+2018-04-19T17:03:56.857Z - error: Error: Error Sending messge to Intercom: 
+    at intercomSendMessage (/Users/kike/Dropbox/Documents/Dev/Desarrollos/PQRS/functions/index.js:119:12)
+    at <anonymous>
+    at runMicrotasksCallback (internal/process/next_tick.js:121:5)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+2018-04-19T17:04:38.310Z - info: Execution took 42092 ms, finished with status: 'crash'
+2018-04-19T17:04:38.334Z - error: Function worker killed by signal: SIGTERM
+2018-04-19T17:04:41.984Z - info: User function triggered, starting execution
+2018-04-19T17:04:41.986Z - error: Error: Error Sending messge to Intercom: 
+    at intercomSendMessage (/Users/kike/Dropbox/Documents/Dev/Desarrollos/PQRS/functions/index.js:120:12)
+    at <anonymous>
+    at runMicrotasksCallback (internal/process/next_tick.js:121:5)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+2018-04-19T17:05:41.963Z - info: Execution took 60817 ms, finished with status: 'timeout'
+2018-04-19T17:05:41.971Z - info: Execution took 60825 ms, finished with status: 'crash'
+2018-04-19T17:05:41.972Z - error: Something went wrong with the function!
+2018-04-19T17:05:41.972Z - error:  Error: Can't set headers after they are sent.
+    at validateHeader (_http_outgoing.js:491:11)
+    at ServerResponse.setHeader (_http_outgoing.js:498:3)
+    at ServerResponse.header (/usr/local/lib/node_modules/firebase-tools/node_modules/express/lib/response.js:767:10)
+    at ServerResponse.send (/usr/local/lib/node_modules/firebase-tools/node_modules/express/lib/response.js:170:12)
+    at ServerResponse.json (/usr/local/lib/node_modules/firebase-tools/node_modules/express/lib/response.js:267:15)
+    at ProxyServer.Supervisor._proxy.on (/usr/local/lib/node_modules/firebase-tools/node_modules/@google-cloud/functions-emulator/src/supervisor/supervisor.js:107:14)
+    at ProxyServer.emit (/usr/local/lib/node_modules/firebase-tools/node_modules/eventemitter3/index.js:144:27)
+    at ClientRequest.proxyError (/usr/local/lib/node_modules/firebase-tools/node_modules/http-proxy/lib/http-proxy/passes/web-incoming.js:156:18)
+    at emitOne (events.js:116:13)
+    at ClientRequest.emit (events.js:211:7)
+2018-04-19T17:05:41.997Z - error: Function worker killed by signal: SIGTERM
+2018-04-19T17:05:45.613Z - info: User function triggered, starting execution
+2018-04-19T17:05:45.616Z - error: Error: Error Sending messge to Intercom: 
+    at intercomSendMessage (/Users/kike/Dropbox/Documents/Dev/Desarrollos/PQRS/functions/index.js:120:12)
+    at <anonymous>
+    at runMicrotasksCallback (internal/process/next_tick.js:121:5)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+2018-04-19T17:05:53.886Z - info: Execution took 9130 ms, finished with status: 'crash'
+2018-04-19T17:05:53.906Z - error: Function worker killed by signal: SIGTERM
+2018-04-19T17:06:00.586Z - info: User function triggered, starting execution
+2018-04-19T17:06:00.589Z - error: Error: Error Sending messge to Intercom: 
+    at intercomSendMessage (/Users/kike/Dropbox/Documents/Dev/Desarrollos/PQRS/functions/index.js:121:12)
+    at exports.processForm.functions.https.onRequest (/Users/kike/Dropbox/Documents/Dev/Desarrollos/PQRS/functions/index.js:35:12)
+    at cloudFunction (/Users/kike/Dropbox/Documents/Dev/Desarrollos/PQRS/functions/node_modules/firebase-functions/lib/providers/https.js:37:41)
+    at app.use (/usr/local/lib/node_modules/firebase-tools/node_modules/@google-cloud/functions-emulator/src/supervisor/worker.js:142:11)
+    at Layer.handle [as handle_request] (/usr/local/lib/node_modules/firebase-tools/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/usr/local/lib/node_modules/firebase-tools/node_modules/express/lib/router/index.js:317:13)
+    at /usr/local/lib/node_modules/firebase-tools/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/usr/local/lib/node_modules/firebase-tools/node_modules/express/lib/router/index.js:335:12)
+    at next (/usr/local/lib/node_modules/firebase-tools/node_modules/express/lib/router/index.js:275:10)
+    at app.use (/usr/local/lib/node_modules/firebase-tools/node_modules/@google-cloud/functions-emulator/src/supervisor/worker.js:114:7)
+2018-04-19T17:07:00.574Z - info: Execution took 60614 ms, finished with status: 'timeout'
+2018-04-19T17:07:00.583Z - info: Execution took 60623 ms, finished with status: 'crash'
+2018-04-19T17:07:00.584Z - error: Something went wrong with the function!
+2018-04-19T17:07:00.584Z - error:  Error: Can't set headers after they are sent.
+    at validateHeader (_http_outgoing.js:491:11)
+    at ServerResponse.setHeader (_http_outgoing.js:498:3)
+    at ServerResponse.header (/usr/local/lib/node_modules/firebase-tools/node_modules/express/lib/response.js:767:10)
+    at ServerResponse.send (/usr/local/lib/node_modules/firebase-tools/node_modules/express/lib/response.js:170:12)
+    at ServerResponse.json (/usr/local/lib/node_modules/firebase-tools/node_modules/express/lib/response.js:267:15)
+    at ProxyServer.Supervisor._proxy.on (/usr/local/lib/node_modules/firebase-tools/node_modules/@google-cloud/functions-emulator/src/supervisor/supervisor.js:107:14)
+    at ProxyServer.emit (/usr/local/lib/node_modules/firebase-tools/node_modules/eventemitter3/index.js:144:27)
+    at ClientRequest.proxyError (/usr/local/lib/node_modules/firebase-tools/node_modules/http-proxy/lib/http-proxy/passes/web-incoming.js:156:18)
+    at emitOne (events.js:116:13)
+    at ClientRequest.emit (events.js:211:7)
+2018-04-19T17:07:00.605Z - error: Function worker killed by signal: SIGTERM
+2018-04-19T17:07:24.955Z - info: User function triggered, starting execution
+2018-04-19T17:07:25.579Z - error: ReferenceError: error is not defined
+    at intercomSendMessage (/Users/kike/Dropbox/Documents/Dev/Desarrollos/PQRS/functions/index.js:118:22)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+2018-04-19T17:08:24.935Z - info: Execution took 60616 ms, finished with status: 'timeout'
+2018-04-19T17:08:24.943Z - info: Execution took 60624 ms, finished with status: 'crash'
+2018-04-19T17:08:24.943Z - error: Something went wrong with the function!
+2018-04-19T17:08:24.944Z - error:  Error: Can't set headers after they are sent.
+    at validateHeader (_http_outgoing.js:491:11)
+    at ServerResponse.setHeader (_http_outgoing.js:498:3)
+    at ServerResponse.header (/usr/local/lib/node_modules/firebase-tools/node_modules/express/lib/response.js:767:10)
+    at ServerResponse.send (/usr/local/lib/node_modules/firebase-tools/node_modules/express/lib/response.js:170:12)
+    at ServerResponse.json (/usr/local/lib/node_modules/firebase-tools/node_modules/express/lib/response.js:267:15)
+    at ProxyServer.Supervisor._proxy.on (/usr/local/lib/node_modules/firebase-tools/node_modules/@google-cloud/functions-emulator/src/supervisor/supervisor.js:107:14)
+    at ProxyServer.emit (/usr/local/lib/node_modules/firebase-tools/node_modules/eventemitter3/index.js:144:27)
+    at ClientRequest.proxyError (/usr/local/lib/node_modules/firebase-tools/node_modules/http-proxy/lib/http-proxy/passes/web-incoming.js:156:18)
+    at emitOne (events.js:116:13)
+    at ClientRequest.emit (events.js:211:7)
+2018-04-19T17:08:24.969Z - error: Function worker killed by signal: SIGTERM
+2018-04-19T17:08:51.500Z - info: User function triggered, starting execution
+2018-04-19T17:08:52.260Z - error: Error: ReferenceError: intercomCreateUser is not defined
+    at intercomSendMessage (/Users/kike/Dropbox/Documents/Dev/Desarrollos/PQRS/functions/index.js:118:12)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+2018-04-19T17:09:51.442Z - info: Execution took 61015 ms, finished with status: 'timeout'
+2018-04-19T17:09:51.451Z - info: Execution took 61024 ms, finished with status: 'crash'
+2018-04-19T17:09:51.451Z - error: Something went wrong with the function!
+2018-04-19T17:09:51.452Z - error:  Error: Can't set headers after they are sent.
+    at validateHeader (_http_outgoing.js:491:11)
+    at ServerResponse.setHeader (_http_outgoing.js:498:3)
+    at ServerResponse.header (/usr/local/lib/node_modules/firebase-tools/node_modules/express/lib/response.js:767:10)
+    at ServerResponse.send (/usr/local/lib/node_modules/firebase-tools/node_modules/express/lib/response.js:170:12)
+    at ServerResponse.json (/usr/local/lib/node_modules/firebase-tools/node_modules/express/lib/response.js:267:15)
+    at ProxyServer.Supervisor._proxy.on (/usr/local/lib/node_modules/firebase-tools/node_modules/@google-cloud/functions-emulator/src/supervisor/supervisor.js:107:14)
+    at ProxyServer.emit (/usr/local/lib/node_modules/firebase-tools/node_modules/eventemitter3/index.js:144:27)
+    at ClientRequest.proxyError (/usr/local/lib/node_modules/firebase-tools/node_modules/http-proxy/lib/http-proxy/passes/web-incoming.js:156:18)
+    at emitOne (events.js:116:13)
+    at ClientRequest.emit (events.js:211:7)
+2018-04-19T17:09:51.475Z - error: Function worker killed by signal: SIGTERM
+2018-04-19T17:10:57.939Z - info: User function triggered, starting execution
+2018-04-19T17:10:59.188Z - error: Error: ReferenceError: message is not defined
+    at intercomSendMessage (/Users/kike/Dropbox/Documents/Dev/Desarrollos/PQRS/functions/index.js:135:12)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+2018-04-19T17:11:52.430Z - info: Execution took 55752 ms, finished with status: 'crash'
+2018-04-19T17:11:52.454Z - error: Function worker killed by signal: SIGTERM
+2018-04-19T17:11:56.019Z - info: User function triggered, starting execution
+2018-04-19T17:11:56.028Z - info: { from: { type: 'user', email: 'mail@mail.com' },
+  body: 'Hey This is a test' }
+2018-04-19T17:11:56.564Z - error: Error: ReferenceError: message is not defined
+    at intercomSendMessage (/Users/kike/Dropbox/Documents/Dev/Desarrollos/PQRS/functions/index.js:136:12)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+2018-04-19T17:12:46.106Z - info: Execution took 50987 ms, finished with status: 'crash'
+2018-04-19T17:12:46.129Z - error: Function worker killed by signal: SIGTERM
+2018-04-19T17:12:49.773Z - info: User function triggered, starting execution
+2018-04-19T17:12:49.781Z - info: { from: { type: 'user', email: 'mail@mail.com' },
+  body: 'Hey This is a test' }
+2018-04-19T17:12:51.525Z - error: Error: Error: timeout of 1000ms exceeded
+    at intercomSendMessage (/Users/kike/Dropbox/Documents/Dev/Desarrollos/PQRS/functions/index.js:136:12)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+2018-04-19T17:13:15.446Z - info: Execution took 26528 ms, finished with status: 'crash'
+2018-04-19T17:13:15.462Z - error: Function worker killed by signal: SIGTERM
+2018-04-19T17:13:19.280Z - info: User function triggered, starting execution
+2018-04-19T17:13:19.282Z - info: { from: { type: 'user', email: 'm@mail.com' },
+  body: 'Hey This is a test, This user already exist' }
+2018-04-19T17:13:20.715Z - error: Error: Error: timeout of 1000ms exceeded
+    at intercomSendMessage (/Users/kike/Dropbox/Documents/Dev/Desarrollos/PQRS/functions/index.js:136:12)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+2018-04-19T17:14:19.256Z - info: Execution took 60829 ms, finished with status: 'timeout'
+2018-04-19T17:14:19.263Z - info: Execution took 60836 ms, finished with status: 'crash'
+2018-04-19T17:14:19.263Z - error: Something went wrong with the function!
+2018-04-19T17:14:19.263Z - error:  Error: Can't set headers after they are sent.
+    at validateHeader (_http_outgoing.js:491:11)
+    at ServerResponse.setHeader (_http_outgoing.js:498:3)
+    at ServerResponse.header (/usr/local/lib/node_modules/firebase-tools/node_modules/express/lib/response.js:767:10)
+    at ServerResponse.send (/usr/local/lib/node_modules/firebase-tools/node_modules/express/lib/response.js:170:12)
+    at ServerResponse.json (/usr/local/lib/node_modules/firebase-tools/node_modules/express/lib/response.js:267:15)
+    at ProxyServer.Supervisor._proxy.on (/usr/local/lib/node_modules/firebase-tools/node_modules/@google-cloud/functions-emulator/src/supervisor/supervisor.js:107:14)
+    at ProxyServer.emit (/usr/local/lib/node_modules/firebase-tools/node_modules/eventemitter3/index.js:144:27)
+    at ClientRequest.proxyError (/usr/local/lib/node_modules/firebase-tools/node_modules/http-proxy/lib/http-proxy/passes/web-incoming.js:156:18)
+    at emitOne (events.js:116:13)
+    at ClientRequest.emit (events.js:211:7)
+2018-04-19T17:14:19.285Z - error: Function worker killed by signal: SIGTERM
+2018-04-19T17:16:34.169Z - info: User function triggered, starting execution
+2018-04-19T17:16:34.190Z - info: { from: { type: 'user', email: 'm@mail.com' },
+  body: 'Hey This is a test, This user already exist.. message continue here' }
+2018-04-19T17:16:36.111Z - error: Error: Error: timeout of 1000ms exceeded
+    at intercomSendMessage (/Users/kike/Dropbox/Documents/Dev/Desarrollos/PQRS/functions/index.js:136:12)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+2018-04-19T17:17:08.504Z - info: Execution took 36108 ms, finished with status: 'crash'
+2018-04-19T17:17:08.526Z - error: Function worker killed by signal: SIGTERM
+2018-04-19T17:26:32.334Z - info: User function triggered, starting execution
+2018-04-19T17:26:33.984Z - error: Error: Error: timeout of 1000ms exceeded
+    at intercomSendMessage (/Users/kike/Dropbox/Documents/Dev/Desarrollos/PQRS/functions/index.js:135:12)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+2018-04-19T17:27:32.307Z - info: Execution took 60616 ms, finished with status: 'timeout'
+2018-04-19T17:27:32.318Z - info: Execution took 60627 ms, finished with status: 'crash'
+2018-04-19T17:27:32.318Z - error: Something went wrong with the function!
+2018-04-19T17:27:32.319Z - error:  Error: Can't set headers after they are sent.
+    at validateHeader (_http_outgoing.js:491:11)
+    at ServerResponse.setHeader (_http_outgoing.js:498:3)
+    at ServerResponse.header (/usr/local/lib/node_modules/firebase-tools/node_modules/express/lib/response.js:767:10)
+    at ServerResponse.send (/usr/local/lib/node_modules/firebase-tools/node_modules/express/lib/response.js:170:12)
+    at ServerResponse.json (/usr/local/lib/node_modules/firebase-tools/node_modules/express/lib/response.js:267:15)
+    at ProxyServer.Supervisor._proxy.on (/usr/local/lib/node_modules/firebase-tools/node_modules/@google-cloud/functions-emulator/src/supervisor/supervisor.js:107:14)
+    at ProxyServer.emit (/usr/local/lib/node_modules/firebase-tools/node_modules/eventemitter3/index.js:144:27)
+    at ClientRequest.proxyError (/usr/local/lib/node_modules/firebase-tools/node_modules/http-proxy/lib/http-proxy/passes/web-incoming.js:156:18)
+    at emitOne (events.js:116:13)
+    at ClientRequest.emit (events.js:211:7)
+2018-04-19T17:27:32.346Z - error: Function worker killed by signal: SIGTERM
+2018-04-19T17:29:19.692Z - info: User function triggered, starting execution
+2018-04-19T17:29:21.580Z - error: Error: Error: timeout of 1000ms exceeded
+    at intercomSendMessage (/Users/kike/Dropbox/Documents/Dev/Desarrollos/PQRS/functions/index.js:136:12)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+2018-04-19T17:29:21.582Z - info: Execution took 1884 ms, user function completed successfully
+2018-04-19T17:31:25.882Z - info: Worker for processForm closed due to file changes.
+2018-04-19T17:31:32.086Z - error: /Users/kike/Dropbox/Documents/Dev/Desarrollos/PQRS/functions/index.js:1
+(function (exports, require, module, __filename, __dirname) { import { stringify } from 'querystring';
+                                                              ^^^^^^
+
+SyntaxError: Unexpected token import
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:616:28)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Module.require (module.js:596:17)
+    at require (internal/module.js:11:18)
+    at process.on (/usr/local/lib/node_modules/firebase-tools/node_modules/@google-cloud/functions-emulator/src/supervisor/worker.js:76:28)
+2018-04-19T17:31:32.106Z - error: Function worker crashed with exit code: 1
+2018-04-19T17:37:27.741Z - info: User function triggered, starting execution
+2018-04-19T17:37:29.464Z - error: Error: Error: timeout of 1000ms exceeded
+    at intercomSendMessage (/Users/kike/Dropbox/Documents/Dev/Desarrollos/PQRS/functions/index.js:137:12)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+2018-04-19T17:37:29.466Z - info: Execution took 1726 ms, user function completed successfully
+2018-04-19T17:42:08.263Z - info: Worker for processForm closed due to file changes.
